@@ -1,13 +1,18 @@
 #include "matrix.h"
 
 int main(void) { 
-	matrix<int> m {
+	matrix<long double> m {
 		{5,1,1},
 		{1,5,-1},
 		{1,-1,5}
 	};
-	std::cout << m << std::endl 
-		<< (m^10) << std::endl;
+	std::cout << m
+	 << (m^10);
+
+	const matrix<long double>& m_backup = m;
+	matrix<long double> mi = m_backup.inverse();
+	std::cout << mi << std::endl;
+	std::cout << m * mi << std::endl;
 	return 0;
 
 }

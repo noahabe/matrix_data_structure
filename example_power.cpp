@@ -7,7 +7,7 @@ int main(void) {
 		{1,-1,5}
 	};
 	std::cout << m << std::endl 
-		<< m^10 << std::endl;
+		<< (m^10) << std::endl;
 	return 0;
 
 }

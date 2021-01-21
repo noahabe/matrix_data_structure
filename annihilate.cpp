@@ -7,6 +7,7 @@ int main(void) {
 		{1,-1,5}
 	};
 	//std::function<matrix<long double>(matrix<long double>)> f = [](matrix<long double>& m) {
+	// f(x) = x ^ 2 - 9 x + 18 
 	auto f = [](matrix<long double>& m) {
 		return (m^2) + m*((long double)-9) + (identity<long double>(m.nrow()) * (long double)18);
 	};

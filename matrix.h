@@ -366,6 +366,12 @@ matrix<T> matrix<T>::operator^(int x) const {
 }
 
 template<typename T>
+matrix<T>& matrix<T>::operator^=(int x) {
+	(*this) = ((*this) ^ x);
+	return (*this);	
+}
+
+template<typename T>
 matrix<T> matrix<T>::inverse() {
 	if (nor != noc)
 		throw NotASquareMatrixError(); 

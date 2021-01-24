@@ -10,4 +10,4 @@ useful for "dynamic programming" and "linear algebra parties" !!
   - matrix addition, subtraction
   - matrix multiplication
   - matrix multiplication by a scalar
- 
+  - powers of matrices 

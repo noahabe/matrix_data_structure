@@ -11,3 +11,5 @@ useful for "dynamic programming" and "linear algebra parties" !!
   - matrix multiplication
   - matrix multiplication by a scalar
   - powers of matrices 
+
+NOTE: This code heavily depends on `std::vector`.
